@@ -64,7 +64,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                     child: FlutterFlowCalendar(
                       color: FlutterFlowTheme.of(context).primaryColor,
                       weekFormat: false,
-                      weekStartsMonday: false,
+                      weekStartsMonday: true,
                       onChange: (DateTimeRange newSelectedDate) {
                         setState(() => calendarSelectedDay = newSelectedDate);
                       },
